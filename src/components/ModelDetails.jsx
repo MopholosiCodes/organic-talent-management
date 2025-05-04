@@ -1,6 +1,7 @@
 import React from "react";
 import { ImageCard } from "./ImageCard";
 import { facebookButton, downloadButton, addSelectionButton } from "../data/model";
+import generatePDF, { Resolution, Margin } from 'react-to-pdf';
 import "../styles/modelDetails.scss";
 
 export const ModelDetails = (props) => {
@@ -17,8 +18,36 @@ export const ModelDetails = (props) => {
         hips, 
         img 
     }= props;
+
+    const options = {
+        filename: name + '.pdf',
+        method: 'save',
+        resolution: Resolution.HIGH,
+        page: {
+          margin: Margin.SMALL,
+          format: 'A4',
+          orientation: 'Portrait',
+        },
+        canvas: {
+          mimeType: 'image/png',
+          qualityRatio: 1,
+        },
+        overrides: {
+          pdf: {
+            compress: true,
+          },
+          canvas: {
+            useCORS: true,
+          },
+        },
+    };
+
+    const toPDF = () => {
+        generatePDF(() => document.getElementById('container'), options);
+    };
+
     return (
-        <div key={id} className="model-details-container">
+        <div id="container" key={id} className="model-details-container">
             <section className="model-details-container__image-container">
                 <ImageCard 
                     id={id} 
@@ -72,7 +101,7 @@ export const ModelDetails = (props) => {
                     </div>
                 </div>
                 <div className="details-container__action-buttons">
-                    <button className="action-buttons__download" type="button">{downloadButton}</button>
+                    <button onClick={() => toPDF()} className="action-buttons__download" type="button">{downloadButton}</button>
                     <button className="action-buttons__select" type="button">{addSelectionButton}</button>
                 </div>
             </section>
