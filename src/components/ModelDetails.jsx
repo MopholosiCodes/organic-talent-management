@@ -40,11 +40,9 @@ export const ModelDetails = (props) => {
             useCORS: true,
           },
         },
-    };
+    };    
 
-    const toPDF = () => {
-        generatePDF(() => document.getElementById('container'), options);
-    };
+    const toPDF = () => generatePDF(() => document.getElementById('container'), options);
 
     return (
         <div id="container" key={id} className="model-details-container">
@@ -97,7 +95,7 @@ export const ModelDetails = (props) => {
                         </section>
                     </div>
                     <div className="details-container__social-buttons">
-                        <button className="social-buttons__facebook" type="button">{facebookButton}</button>
+
                     </div>
                 </div>
                 <div className="details-container__action-buttons">

@@ -1,4 +1,4 @@
-export const facebookButton = 'SHARE ON FACEBOOK';
+export const facebookButton = 'SHARE PORTFOLIO';
 export const downloadButton = 'DOWNLOAD SETCARD';
 export const addSelectionButton = 'ADD TO SELECTION';
 export const model = [

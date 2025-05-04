@@ -1,12 +1,29 @@
-# Getting Started with Create React App
+# Organic Talent anagement
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Frontend Design 
+### Page links
+1. /
+2. /models/{id}
+3. /model/{id}
+4. /become-a-model
+5. /clients
+6. /client/{id}
+7. /about-us
+8. /contact
 
-In the project directory, you can run:
+### Page Screenshots
+1. formik v2.4.6
+2. emailjs-com v3.2.0
+3. yup v1.6.1
+4. react-to-pdf v2.0.0
+5. react-select v5.10.1
+6. sass v1.86.3
 
-### `npm start`
+### Packages
+
+## Backend Design 
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
