@@ -1,0 +1,22 @@
+.model-details-container {
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.model-details-container__details-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.details-container__details-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 40%;
+}
+
+.details-container__details {
+
+}

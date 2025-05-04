@@ -1,0 +1,31 @@
+.review-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 490px;
+    min-width: 490px;
+    min-height: 200px;
+    max-height: 210px;
+    border:  1px solid rgb(52, 52, 52);
+    padding: 15px;
+    margin: 15px;
+}
+
+.review-container__review-card-footer {
+    border-top: 1px solid rgb(52, 52, 52);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: max-content;
+    min-width: 490px;
+    align-items: center;
+}
+
+.review-card-footer__reviewer_name {
+    text-align: left;
+}
+
+.review-card-footer__review-stars {
+    text-align: right;
+}

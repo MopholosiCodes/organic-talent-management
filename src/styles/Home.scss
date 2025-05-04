@@ -1,0 +1,46 @@
+.home-container__contact {
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    flex-wrap: wrap;
+}
+
+.home-container__models-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 700px;
+    background-color: black;
+    color: white;
+}
+
+.models-section__title {
+    text-align: center;
+}
+
+.models-section__image-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-container__reviews {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.models-section__reviews-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

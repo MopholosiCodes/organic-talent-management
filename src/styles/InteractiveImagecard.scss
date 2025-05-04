@@ -1,0 +1,15 @@
+.image-card-container {
+    padding: 15px;
+}
+
+.image-card-container__slider {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ min-height: 70px;
+ background-color: black;
+ color: white;
+ position:sticky;
+ top: 50%;
+}

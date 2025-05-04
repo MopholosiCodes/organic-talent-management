@@ -1,0 +1,31 @@
+.footer-container {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.footer-container__contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.address__details__company,
+.address__details__mail,
+.address__details__address,
+.contact__title,
+.contact__contact {
+    line-height: 0%;
+}
+
+.footer-container__social-strip {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center; 
+}
+

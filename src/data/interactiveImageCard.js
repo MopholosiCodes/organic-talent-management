@@ -1,0 +1,1 @@
+export const selectButtonTitle = "ADD TO SELECTION";

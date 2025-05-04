@@ -1,0 +1,20 @@
+.card-container {
+    background-color: black;
+    min-height: 200px;
+    min-width: 600px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container__button {
+    color: black;
+    background-color: white;
+    min-height: 60px;
+    min-width: 150px;
+    
+}

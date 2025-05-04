@@ -1,0 +1,11 @@
+.title {
+    text-align: center;
+}
+
+.clients-container__image-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

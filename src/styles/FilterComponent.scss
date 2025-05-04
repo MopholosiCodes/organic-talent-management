@@ -1,0 +1,74 @@
+.filter-container__active {
+    min-height: 450px; 
+}
+
+.filter-container {
+    min-height: 0px;
+}
+
+.filter-form__fields-two-col {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+}
+
+.filter-form__fields-two-col > .dropdown {
+    width: 49%;
+}
+
+.filter-form__fields-three-col {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+}
+
+.filter-form__fields-three-col > .dropdown {
+    width: 32%;
+}
+
+.filter-form__fields-three-col {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+}
+
+.filter-form__fields-four-col {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+}
+
+.filter-form__fields-four-col > .dropdown {
+    width: 24%;
+}
+
+.dropdown {
+    margin: 15px 0px 15px 0px;
+}
+
+.filter-container__filter-buttons, 
+.fields-buttons__apply-filter,
+.fields-buttons__clear-filter {
+    width: 150px;
+    height: 60px;
+    margin: 20px 20px 20px 0px
+}
+
+.filter-container__filter-buttons {
+    color: white;
+    background-color: black;
+}
+
+.fields-buttons__apply-filter {
+    color: white;
+    background-color: black;
+}
+
+.fields-buttons__clear-filter {
+    color: black;
+    background-color: white;
+}

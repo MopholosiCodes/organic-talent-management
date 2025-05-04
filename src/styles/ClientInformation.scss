@@ -1,0 +1,17 @@
+.client-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.client-container__heading {
+    text-align: left;
+}
+
+.client-container__details-container-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
