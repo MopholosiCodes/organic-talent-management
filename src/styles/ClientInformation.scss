@@ -1,17 +1,92 @@
 .client-details-container {
     display: flex;
     flex-direction: column;
-}
-
-.client-container__heading {
-    text-align: left;
-}
-
-.client-container__details-container-parent {
+    padding: 3rem 2rem;
+    max-width: 1100px;
+    margin: 3rem auto;
+    background: linear-gradient(to bottom right, #ffffff, #f2f4f8);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+  }
+  
+  .client-container__heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    border-left: 6px solid #4f46e5;
+    padding-left: 1rem;
+    color: #1e1e1e;
+  }
+  
+  .client-container__details-container-parent {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 2.5rem;
     flex-wrap: wrap;
-    width: 100%;
-    border-bottom: 1px solid black;
+    justify-content: space-between;
+  }
+  
+  .client-container__details-container,
+  .details-container__model-details {
+    flex: 1 1 45%;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+  }
+  
+  .client-container__details-container:hover,
+  .details-container__model-details:hover {
+    transform: translateY(-4px);
+  }
+  
+  .client-details__title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .details-container__model-details h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #444;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    color: #555;
+  }
+  
+  .client-container__video-container p {
+    font-style: italic;
+    color: #666;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .client-container__details-container::after,
+  .details-container__model-details::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #4f46e5;
+    margin: 1.5rem 0 0;
+    border-radius: 2px;
+  }
+  
+  @media (max-width: 768px) {
+    .client-container__details-container,
+    .details-container__model-details {
+      flex: 1 1 100%;
+    }
 }
+  

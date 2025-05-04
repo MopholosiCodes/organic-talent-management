@@ -28,7 +28,7 @@ export const ClientInformation = (props) => {
                 </section>
                 <div className="details-container__model-details">
                         <h1>Models</h1>
-                        <p>{modelNames.map(model => model.name + ', ')}</p>
+                        <p>{modelNames.map(model => model.name).join(', ')}</p>
                         <section className="client-container__video-container">
                     <p>Produced video: {productionVideo}</p>
                 </section>

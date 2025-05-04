@@ -13,7 +13,7 @@ export const registerContent = [
         id: 2,
         title: 'Book our models and prep for casting',
         buttonText: 'Book our Models',
-        path: '/become-a-model'
+        path: '/models/all'
     }
 ];
 

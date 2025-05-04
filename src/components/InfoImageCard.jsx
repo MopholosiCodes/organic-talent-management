@@ -25,7 +25,7 @@ export const InfoImageCard = (props) => {
     }
 
     return (
-        <div key={id} className="info-image-card-container">
+        <div key={id} className={`info-image-card-container ${reverseImage ? 'reverse' : ''}`}>
             <ImageCard  
                 width='300px'
                 height='390px'

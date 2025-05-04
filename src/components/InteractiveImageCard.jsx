@@ -1,25 +1,26 @@
-import React,{useState} from "react";
-import "../styles/InteractiveImagecard.scss";
+import React, { useState } from "react";
 import { selectButtonTitle } from "../data/interactiveImageCard";
+import "../styles/InteractiveImagecard.scss";
 
 export const InteractiveImageCard = (props) => {
-    const {id, title, imgUrl, height = '390px', width='300px', path} = props
+    const { id, title, imgUrl, height = '390px', width = '300px', path } = props;
     const [isHover, setIsHover] = useState(false);
+
     return (
         <a
             key={id}
-            href={path}  
-            onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => setIsHover(false)} 
+            href={path}
             className="image-card-container"
+            onMouseEnter={() => setIsHover(true)}
+            onMouseLeave={() => setIsHover(false)}
         >
-            <a>
-                <img 
-                    width={width} 
-                    height={height} 
-                    className="image-card-container__img" 
-                    src={imgUrl} 
-                    alt={title} 
+            <div className="image-card-inner">
+                <img
+                    width={width}
+                    height={height}
+                    className="image-card-container__img"
+                    src={imgUrl}
+                    alt={title}
                 />
                 {isHover && (
                     <div className="image-card-container__slider">
@@ -27,7 +28,7 @@ export const InteractiveImageCard = (props) => {
                         <button className="slider__select-button">{selectButtonTitle}</button>
                     </div>
                 )}
-            </a>
+            </div>
         </a>
-    )
+    );
 };
