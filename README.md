@@ -14,8 +14,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 8. /contact
 
 ### Admin links
-1. /model/load
-2. client/load
+1. admin/login
+2. admin/models
+3. admin/model/create
+4. admin/clients
+5. admin/client/create
+6. admin/projects
+7. admin/project/create
+8. admin/about/update
 
 ### Packages
 1. formik v2.4.6
