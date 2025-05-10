@@ -1,4 +1,4 @@
-# Organic Talent anagement
+# Organic Talent Management
 
 This project was built using:
 1. Create React App
