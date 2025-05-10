@@ -36,6 +36,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![image](https://github.com/user-attachments/assets/843456aa-bf9a-4df0-887f-c5c80d351c18)
 
 ### Sequence diagram
+### Upload portfolio process
+![image](https://github.com/user-attachments/assets/dea8ee8d-999a-4d37-acb1-50e6897411f7)
+
 
 ## Notes
 `npm run build` - Builds the app for production to the `build` folder.\
