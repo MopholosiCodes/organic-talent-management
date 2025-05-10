@@ -42,7 +42,7 @@ This project was built using:
 ![image](https://github.com/user-attachments/assets/8144d12e-b8be-45d8-859b-5576763a67cd)
 
 ##### Upload Clients / Projects / Site metadata
-![image](https://github.com/user-attachments/assets/66f8868a-7468-42e6-9f42-95fd474b5959)
+![image](https://github.com/user-attachments/assets/71a8a59f-b465-4b3f-a635-f1493422e144)
 
 ## Notes
 `npm run build` - Builds the app for production to the `build` folder.\
