@@ -13,7 +13,7 @@ This project was built using [Create React App](https://github.com/facebook/crea
 7. /about-us
 8. /contact
 
-### Admin links
+### Admin links (TBC)
 1. admin/login
 2. admin/models
 3. admin/model/create
