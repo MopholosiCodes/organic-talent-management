@@ -13,6 +13,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 7. /about-us
 8. /contact
 
+### Admin links
+1. /model/load
+2. client/load
+
 ### Packages
 1. formik v2.4.6
 2. emailjs-com v3.2.0
