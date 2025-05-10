@@ -1,6 +1,6 @@
 # Organic Talent anagement
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was built using [Create React App](https://github.com/facebook/create-react-app).
 
 ## Frontend Design 
 ### Page links
@@ -37,12 +37,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Sequence diagram
 ### Upload portfolio process
-![image](https://github.com/user-attachments/assets/dea8ee8d-999a-4d37-acb1-50e6897411f7)
+![image](https://github.com/user-attachments/assets/8144d12e-b8be-45d8-859b-5576763a67cd)
 
+### Upload Clients / Projects / Site metadata
 
 ## Notes
 `npm run build` - Builds the app for production to the `build` folder.\
-`npm run eject`
 
 ## Learn More
 ### Making a Progressive Web App
