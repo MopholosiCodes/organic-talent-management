@@ -1,8 +1,8 @@
 # Organic Talent anagement
 
 This project was built using:
-1. [Create React App](https://github.com/facebook/create-react-app).
-2. [Supabase](https://github.com/supabase/supabase).
+1. Create React App
+2. Supabase
 
 ## Frontend Design 
 ### Page links
@@ -38,10 +38,10 @@ This project was built using:
 ![image](https://github.com/user-attachments/assets/843456aa-bf9a-4df0-887f-c5c80d351c18)
 
 ### Sequence diagram
-### Upload portfolio process
+##### Upload portfolio process
 ![image](https://github.com/user-attachments/assets/8144d12e-b8be-45d8-859b-5576763a67cd)
 
-### Upload Clients / Projects / Site metadata
+##### Upload Clients / Projects / Site metadata
 
 ## Notes
 `npm run build` - Builds the app for production to the `build` folder.\
