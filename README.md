@@ -26,6 +26,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 6. sass v1.86.3
 
 ## Backend Design 
+### Database
+![image](https://github.com/user-attachments/assets/843456aa-bf9a-4df0-887f-c5c80d351c18)
 
 ## Notes
 `npm run build` - Builds the app for production to the `build` folder.\
