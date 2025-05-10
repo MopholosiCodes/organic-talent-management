@@ -1,6 +1,8 @@
 # Organic Talent anagement
 
-This project was built using [Create React App](https://github.com/facebook/create-react-app).
+This project was built using:
+1. [Create React App](https://github.com/facebook/create-react-app).
+2. [Supabase](https://github.com/supabase/supabase).
 
 ## Frontend Design 
 ### Page links
