@@ -4,6 +4,25 @@ This project was built using:
 1. Create React App
 2. Supabase
 
+### Packages
+1. formik v2.4.6
+2. emailjs-com v3.2.0
+3. yup v1.6.1
+4. react-to-pdf v2.0.0
+5. react-select v5.10.1
+6. sass v1.86.3
+
+## Backend Design 
+### Entity Relationship
+![image](https://github.com/user-attachments/assets/843456aa-bf9a-4df0-887f-c5c80d351c18)
+
+### Sequence diagram
+##### Upload portfolio process
+![image](https://github.com/user-attachments/assets/8144d12e-b8be-45d8-859b-5576763a67cd)
+
+##### Upload Clients / Projects / Site metadata
+![image](https://github.com/user-attachments/assets/71a8a59f-b465-4b3f-a635-f1493422e144)
+
 ## Frontend Design 
 ### Page links
 1. /
@@ -24,25 +43,6 @@ This project was built using:
 6. admin/projects
 7. admin/project/create
 8. admin/about/update
-
-### Packages
-1. formik v2.4.6
-2. emailjs-com v3.2.0
-3. yup v1.6.1
-4. react-to-pdf v2.0.0
-5. react-select v5.10.1
-6. sass v1.86.3
-
-## Backend Design 
-### Entity Relationship
-![image](https://github.com/user-attachments/assets/843456aa-bf9a-4df0-887f-c5c80d351c18)
-
-### Sequence diagram
-##### Upload portfolio process
-![image](https://github.com/user-attachments/assets/8144d12e-b8be-45d8-859b-5576763a67cd)
-
-##### Upload Clients / Projects / Site metadata
-![image](https://github.com/user-attachments/assets/71a8a59f-b465-4b3f-a635-f1493422e144)
 
 ## Notes
 `npm run build` - Builds the app for production to the `build` folder.\
