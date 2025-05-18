@@ -1,52 +1,54 @@
 import React, { useState, useEffect } from "react";
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { fetchModelsByGender } from "../data/model-db";
 import { FilterComponent } from "../components/FilterComponent";
-import { models } from "../data/models";
 import { InteractiveImageCard } from "../components/InteractiveImageCard";
 import "../styles/Models.scss";
 
 export const Models = () => {
-  const [fetchGender, setFetchGender] = useState();
+  const [fetchGender, setFetchGender] = useState("all");
+  const [fetchModels, setFetchModels] = useState([]);
   const [isActiveFilter, setIsActiveFilter] = useState(false);
-  let { gender } = useParams();
+  const { gender } = useParams();
 
   useEffect(() => {
-    switch (gender) {
-      case "all":
-        setFetchGender("Models")
-        break;
-      case "men":
-        setFetchGender("Men")
-        break;
-      case "women":
-        setFetchGender("Women")
-        break;
-      case "kids":
-        setFetchGender("Kids")
-      break;
-      default:
-        break;
-    }
-  },[gender]);
+    const getModels = async () => {
+      let normalizedGender = "all";
+
+      if (gender === "male" || gender === "female" || gender === "kids") normalizedGender = gender;
+      
+      setFetchGender(normalizedGender);
+
+      await fetchModelsByGender(normalizedGender)
+        .then((models) => setFetchModels(models || []))
+        .catch((error) => {
+          console.error("Failed to fetch models:", error)
+          setFetchModels([]);
+        })
+    };
+
+    getModels();
+  }, [gender]);
 
   return (
     <div className="models-container">
       <div className="models-container__title">
-        <h1 className="title">{fetchGender}</h1>
+        <h1 className="title">{fetchGender.toUpperCase()}</h1>
       </div>
       <FilterComponent 
         setIsActiveFilter={setIsActiveFilter} 
         isActiveFilter={isActiveFilter} 
       />
       <div className="models-container__model-cards">
-        {models.map(model => 
-          <InteractiveImageCard 
-            id={model.id} 
-            imgUrl={model.imgUrl} 
-            title={model.title}  
-            path={"/model/" + model.title}
+        {fetchModels.map((model) => (
+          <InteractiveImageCard
+            key={model.model_id}
+            id={model.model_id}
+            imgUrl={model.img_url}
+            title={`${model.first_name} ${model.last_name}`}
+            path={`/model/${model.first_name}-${model.last_name}`}
           />
-        )}
+        ))}
       </div>
     </div>
   );

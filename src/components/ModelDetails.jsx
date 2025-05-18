@@ -61,15 +61,15 @@ export const ModelDetails = (props) => {
                     <div className="details-container__details">
                         <section>
                             <p>Height</p>
-                            <p>{height}</p>
+                            <p>{height} cm</p>
                         </section>
                         <section>
                             <p>Shoe Size</p>
-                            <p>{shoeSize}</p>
+                            <p>{shoeSize} cm</p>
                         </section>
                         <section>
                             <p>Eyes</p>
-                            <p>{eyes}</p>
+                            <p>{eyes} color</p>
                         </section>
                         <section>
                             <p>Hair</p>
@@ -79,19 +79,19 @@ export const ModelDetails = (props) => {
                     <div className="details-container__details">
                         <section>
                             <p>Waist</p>
-                            <p>{waist}</p>
+                            <p>{waist} cm</p>
                         </section>
                         <section>
                             <p>Age</p>
-                            <p>{age}</p>
+                            <p>{age} years old</p>
                         </section>
                         <section>
                             <p>Dress Size</p>
-                            <p>{dressSize}</p>
+                            <p>{dressSize} cm</p>
                         </section>
                         <section>
                             <p>Hips</p>
-                            <p>{hips}</p>
+                            <p>{hips} cm</p>
                         </section>
                     </div>
                     <div className="details-container__social-buttons">
